@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Resumos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="assets/img/logo-EmillyAndradeDev.png" alt="Logo de Emilly Andrade">
+                    <!-- Ícone do logo -->
+                    <h1 class="logo">EmillyAndrade<span class="realce">DEV</span></h1>
+                </div>
+                <!-- <button class="new-note-btn" id="newNoteBtn">+ Novo Resumo</button> -->
+                <!-- Botão para adicionar novo resumo -->
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar resumos..."> 
+            <!-- Campo de busca -->
+            <select class="course-filter"> 
+                <!-- Filtro de cursos -->
+                <option value="">Todos os cursos</option>
+                <option value="Web Development">Web Development</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Data Science">Data Science</option>
+                <option value="UX Design">UX Design</option>
+            </select>
+        </div>
+
+        <div class="notes-grid" id="notesContainer"> 
+            <!-- Grade de notas -->
+            <!-- Exemplo de notas - serão geradas dinamicamente pelo JavaScript -->
+            <div class="note-card">
+                <img src="https://placehold.co/600x400/4f46e5/white?text=Web+Dev"
+                    alt="Thumbnail do curso de Web Development na Udemy" class="course-thumbnail">
+                <!-- Thumbnail do curso -->
+                <div class="note-content">
+                    <div class="course-info">
+                        <span>Web Development</span> 
+                        <!-- Nome do curso -->
+                        <span>10/05/2023</span> 
+                        <!-- Data do resumo -->
+                    </div>
+                    <h3 class="course-title">Introdução ao HTML e CSS</h3> 
+                    <!-- Título do resumo -->
+                    <p class="note-excerpt">Nesta aula aprendemos os fundamentos do HTML5 e CSS3, incluindo semântica,
+                        seletores e propriedades básicas de estilo...</p> 
+                        <!-- Excertos do resumo -->
+                    <div class="tags">
+                        <span class="tag">HTML</span> 
+                        <!-- Tag -->
+                        <span class="tag">CSS</span> 
+                        <!-- Tag -->
+                        <span class="tag">Fundamentos</span>
+                         <!-- Tag -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-card">
+                <img src="https://placehold.co/600x400/3b82f6/white?text=JavaScript"
+                    alt="Thumbnail do curso de JavaScript na Udemy" class="course-thumbnail">
+                <!-- Thumbnail do curso -->
+                <div class="note-content">
+                    <div class="course-info">
+                        <span>JavaScript</span> <!-- Nome do curso -->
+                        <span>15/05/2023</span> <!-- Data do resumo -->
+                    </div>
+                    <h3 class="course-title">Arrays e Objetos</h3> <!-- Título do resumo -->
+                    <p class="note-excerpt">Principais métodos de arrays como map, filter e reduce. Criação e
+                        manipulação de objetos, incluindo destructuring e spread operator...</p>
+                    <!-- Excertos do resumo -->
+                    <div class="tags">
+                        <span class="tag">ES6</span> <!-- Tag -->
+                        <span class="tag">Arrays</span> <!-- Tag -->
+                        <span class="tag">Objetos</span> <!-- Tag -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: <a
+                href="https://emillyandradedev.github.io/portfolio-emilly-andrade-dev/">EmillyAndradeDev</a></p>
+        <p>Para sugestões e correções, entre em contato: <a
+                href="mailto: emilly.andrade.digital@gmail.com">emilly.andrade.digital@gmail.com</a></p>
+    </footer>
+
+    <script src="js/resumos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
