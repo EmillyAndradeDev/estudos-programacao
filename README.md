@@ -47,7 +47,7 @@ meus-resumos-e-anotacoes/
 │   ├── CursoEmVideo/            # Resumos do curso Curso em Vídeo
 │   ├── EstudanteDev/            # Resumos do curso EstudanteDev
 │   ├── UdemyJavaScript/         # Resumos do curso de JavaScript (Udemy)
-│   ├── Estacio/                 # Resumos da faculdade Estácio separadas por semestre
+│   ├── ADS/                 # Resumos da faculdade Estácio separadas por semestre
 │   │   └── 1semestre/           # Resumos do 1º semestre separados por matéria
 │   └── 00-resumo-modelo.html    # Modelo base para criar novos resumos
 │

@@ -696,6 +696,10 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+table ul {
+    list-style: none;
+}
+
 ul {
     list-style: circle;
 }

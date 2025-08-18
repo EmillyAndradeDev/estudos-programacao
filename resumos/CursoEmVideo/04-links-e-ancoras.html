@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e âncoras </title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Links e âncoras</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Links Externos</h2>
+                <p>O que é um link externo? É um link que direciona para outro site, um site que não é meu.</p>
+                <!-- *Tag básica -->
+                <h3>Tag básica para links externos</h3>
+                <p>Você pode acessar o <a href="https://github.com/EmillyAndradeDev">meu Github clicando aqui</a>.</p>
+                <!-- *Atributo link externo -->
+                <h3>Link que abre nova aba</h3>
+                <p>Você pode acessar o <a href="https://github.com/EmillyAndradeDev" target="_blank" rel="external">meu Github clicando aqui</a>.</p>
+                <div class="destaque">
+                    <p>&rarr; Parâmetro target="_blank"</p>
+                    <ul>
+                        <li>target="_blank" fica dentro da tag &lt;a href=""&gt;&lt;/a&gt;</li>
+                        <li>Ou seja, a tag para links externos deve ser: &lt;a href="" target="_blank"&gt;&lt;/a&gt;</li>
+                    </ul>
+                </div>
+                <div class="destaque">
+                    <p>&rarr; Parâmetro target="_self"</p>
+                    <ul>
+                        <li>Tag que abre o site na própria aba em que estamos usando.</li>
+                    </ul>
+                </div>
+                <div class="destaque">
+                    <p>&rarr; Parâmetro rel=""</p>
+                    <ul>
+                        <li>Para links externos, usamos também o parâmetro rel="external", além do parâmetro target="_blank"</li>
+                        <li>Ou seja, a tag para links externos deve ser: &lt;a href="seuLinkAqui" target="_blank" rel="external"&gt;Texto que aparece no lugar do link para o usuário&lt;/a&gt;</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <!-- * Links internos -->
+                <h2>Links internos</h2>
+                <p>Para usar links internos é necessário ter mais páginas no nosso projeto.</p>
+                <p>O parâmetro target blank é opcional nesse caso, porque o usuário não vai para outro site, ele continua no seu e pode retornar via link para a página inicial.</p>
+                <p>&rarr; Você pode usar apenas a tag padrão de link: &lt;a href="seuLinkAqui"&gt;Texto que aparece no lugar do link para o usuário&lt;/a&gt;</p>
+                <div class="destaque">
+                    <p>&rarr; Caso queira usar algum parâmetro target nesse caso, use:</p>
+                    <ul>
+                        <li>target="_self"</li>
+                        <li>Esse parâmetro indica para o navegador que a página deve ser aberta na própria página que está sendo navegada no momento. Mas não é obrigatório usar. </li>
+                    </ul>
+                </div>
+                <!-- * Usando links internos de outra pasta -->
+                <h3>Usando links internos de outra pasta</h3>
+                <p>Nesse caso é necessário informar o caminho.</p>
+                <p>&rarr; Exemplo: &lt;a href="nome-da-pasta/nomeDoArquivo.html"&gt;Texto que aparece no lugar do link para o usuário&lt;/a&gt;</p>
+            </section>
+
+            <section class="resumo-section">
+                <!-- * links para download -->
+                <h2>Links para download</h2>
+                <p>Nesse caso temos dentro da tag &lt;a href=""&gt;&lt;/a&gt; o parâmetro download type="" que varia para cada tipo de arquivo.</p>
+                <p>O valor de type="" não tem nada a ver com o nome do arquivo. Ele deve ser sempre o MIME type oficial do formato, que segue o padrão categoria/subtipo.</p>
+                <div class="destaque">
+                    <p>&rarr; o atributo type é opcional. Ele só serve como dica do tipo de conteúdo que o navegador vai lidar no download, mas normalmente o servidor já informa isso pelo cabeçalho HTTP.</p>
+                    <p>&rarr; Pode usar apenas a palavra download, sem colocar o atributo type="", nesse caso, a tag ficaria assim &lt;a href="linkParaODownload.formatoDoArquivo" download&gt;Baixar arquivo&lt;/a&gt;</p>
+                    <p>&rarr; Ou seja, Se sua intenção é download obrigatório, use sempre download. O type="" é opcional, só complementa informando o tipo MIME.</p>
+                </div>
+                <!-- tabela type -->
+                <h3>MIME types mais usados em links para download no HTML</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Tipo de Arquivo</th>
+                            <th>type=""</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Documento</td>
+                            <td>PDF</td>
+                            <td>application/pdf</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>DOC (Word antigo)</td>
+                            <td>application/msword</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>DOCX (Word novo)</td>
+                            <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>XLS (Excel antigo)</td>
+                            <td>application/vnd.ms-excel</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>XLSX (Excel novo)</td>
+                            <td>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>PPT (PowerPoint antigo)</td>
+                            <td>application/vnd.ms-powerpoint</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>PPTX (PowerPoint novo)</td>
+                            <td>application/vnd.openxmlformats-officedocument.presentationml.presentation</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>TXT</td>
+                            <td>text/plain</td>
+                        </tr>
+                        <tr>
+                            <td>Documento</td>
+                            <td>JSON</td>
+                            <td>application/json</td>
+                        </tr>
+                        <tr>
+                            <td>Imagem</td>
+                            <td>PNG</td>
+                            <td>image/png</td>
+                        </tr>
+                        <tr>
+                            <td>Imagem</td>
+                            <td>JPEG</td>
+                            <td>image/jpeg</td>
+                        </tr>
+                        <tr>
+                            <td>Imagem</td>
+                            <td>GIF</td>
+                            <td>image/gif</td>
+                        </tr>
+                        <tr>
+                            <td>Imagem</td>
+                            <td>SVG</td>
+                            <td>image/svg+xml</td>
+                        </tr>
+                        <tr>
+                            <td>Áudio</td>
+                            <td>MP3</td>
+                            <td>audio/mpeg</td>
+                        </tr>
+                        <tr>
+                            <td>Áudio</td>
+                            <td>OGG</td>
+                            <td>audio/ogg</td>
+                        </tr>
+                        <tr>
+                            <td>Áudio</td>
+                            <td>WAV</td>
+                            <td>audio/wav</td>
+                        </tr>
+                        <tr>
+                            <td>Vídeo</td>
+                            <td>MP4</td>
+                            <td>video/mp4</td>
+                        </tr>
+                        <tr>
+                            <td>Vídeo</td>
+                            <td>WebM</td>
+                            <td>video/webm</td>
+                        </tr>
+                        <tr>
+                            <td>Vídeo</td>
+                            <td>OGG</td>
+                            <td>video/ogg</td>
+                        </tr>
+                        <tr>
+                            <td>Código</td>
+                            <td>HTML</td>
+                            <td>text/html</td>
+                        </tr>
+                        <tr>
+                            <td>Código</td>
+                            <td>CSS</td>
+                            <td>text/css</td>
+                        </tr>
+                        <tr>
+                            <td>Código</td>
+                            <td>JavaScript</td>
+                            <td>application/javascript</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <a href="../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>
