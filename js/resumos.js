@@ -5,6 +5,7 @@
 // 037171 - cor CursoEmVideo
 // AFA98D - cor card 
 // 494368 - cor card
+// 48284A
 const resumos = [
     // {
     //     curso: "Nome do Curso",      
@@ -67,7 +68,7 @@ const resumos = [
     },
 
     {
-        curso: "Análise e Desenvolvimento de Sistemas",
+        curso: "Análise e Desenvolvimento de Sistemas - Computação em Nuvem",
         data: "01/01/2025",
         titulo: "Fundamentos da Computação em Nuvem",
         resumo: "Conteúdo da matéria: Computação em Nuvem. Tema: Fundamentos da Computação em Nuvem.",
@@ -77,7 +78,7 @@ const resumos = [
     },
 
     {
-        curso: "Análise e Desenvolvimento de Sistemas",
+        curso: "Análise e Desenvolvimento de Sistemas - Computação em Nuvem",
         data: "01/01/2025",
         titulo: "Arquitetura de Computação em Nuvem",
         resumo: "Conteúdo da matéria: Computação em Nuvem. Tema: Arquitetura da Computação em Nuvem.",
@@ -87,7 +88,7 @@ const resumos = [
     },
 
     {
-        curso: "Análise e Desenvolvimento de Sistemas",
+        curso: "Análise e Desenvolvimento de Sistemas - Computação em Nuvem",
         data: "01/01/2025",
         titulo: "Segurança em Computação em Nuvem",
         resumo: "Conteúdo da matéria: Computação em Nuvem. Tema: Segurança em Computação em Nuvem.",
@@ -97,7 +98,7 @@ const resumos = [
     },
 
     {
-        curso: "Análise e Desenvolvimento de Sistemas",
+        curso: "Análise e Desenvolvimento de Sistemas - Computação em Nuvem",
         data: "01/01/2025",
         titulo: "Ambiente de computação em nuvem - Azure",
         resumo: "Conteúdo da matéria: Computação em Nuvem. Tema: Ambiente de computação em nuvem - Azure.",
@@ -107,7 +108,7 @@ const resumos = [
     },
 
     {
-        curso: "Análise e Desenvolvimento de Sistemas",
+        curso: "Análise e Desenvolvimento de Sistemas - Computação em Nuvem",
         data: "01/01/2025",
         titulo: "Ambiente de Computação em nuvem - AWS",
         resumo: "Conteúdo da matéria: Computação em Nuvem. Tema: Ambiente de Computação em nuvem - AWS.",
@@ -117,12 +118,72 @@ const resumos = [
     },
 
     {
-        curso: "Análise e Desenvolvimento de Sistemas",
+        curso: "Análise e Desenvolvimento de Sistemas - Computação em Nuvem",
         data: "01/01/2025",
         titulo: "Ambiente de Computação em Nuvem - Google Cloud",
         resumo: "Conteúdo da matéria: Computação em Nuvem. Tema: Ambiente de Computação em Nuvem - Google Cloud.",
         tags: ["O que é Google Cloud?", "Diferenciais do Google Cloud", "Principais Serviços", "Boas Práticas de Segurança e Operações", "Aplicações Práticas no Google Cloud", "Comparativo: Azure x AWS x GCP"],
         thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Computação+em+Nuvem:+06",
         link: "resumos/ADS/01-semestre/ComputacaoEmNuvem/06-ambiente-de-computacao-em-nuvem-google-cloud.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Pensamento Computacional",
+        data: "01/01/2025",
+        titulo: "Introdução aos Princípios Fundamentais da Computação",
+        resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: Introdução aos Princípios Fundamentais da Computação.",
+        tags: ["Entrada", "Processamento", "Saída", "Algoritmos", "Códigos", "Pseudocódigo", "Python"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+01",
+        link: "resumos/ADS/01-semestre/PensamentoComputacional/01-introducao-aos-principios-fundamentais-da-computacao.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Pensamento Computacional",
+        data: "01/01/2025",
+        titulo: "Pensamento Computacional e Aplicações nas Áreas de Conhecimento",
+        resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: Pensamento Computacional e Aplicações nas Áreas de Conhecimento.",
+        tags: ["Pensamento Computacional", "Abstração", "Decomposição", "Reconhecimento de Padrões", "Algoritmos", "Economia Criativa", "Negócios", "Ciências Jurídicas", "Educação", "Engenharia", "Pseudocódigo", "Python"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+02",
+        link: "resumos/ADS/01-semestre/PensamentoComputacional/02-aplicacoes-nas-areas-de-conhecimento.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Pensamento Computacional",
+        data: "01/01/2025",
+        titulo: "Sistemas Computacionais",
+        resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: Sistemas Computacionais.",
+        tags: ["Sistemas Computacionais", "Hardware", "Software", "Linguagens de Programação", "Sistema Operacional"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+03",
+        link: "resumos/ADS/01-semestre/PensamentoComputacional/03-sistemas-computacionais.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Pensamento Computacional",
+        data: "01/01/2025",
+        titulo: "Representação de Imagens em Computadores",
+        resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: Representação de Imagens em Computadores.",
+        tags: ["Fundamentos da imagem digital", "RGB", "Grayscale", "Imagens Bitmap x Vetoriais", "Profundidade de cor e resolução", "Python"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+04",
+        link: "resumos/ADS/01-semestre/PensamentoComputacional/04-representacao-de-imagens-em-computadores.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Pensamento Computacional",
+        data: "01/01/2025",
+        titulo: "Noções de Programação: Exemplos Com Manipulação de Imagens Digitais",
+        resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: Noções de Programação: Exemplos Com Manipulação de Imagens Digitais.",
+        tags: ["Manipulação singular de dados", "Estruturas de repetição: for", "Expressões em código de computador", "Estrutura condicional: if", "Programação dinâmica em páginas HTML com PHP"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+05",
+        link: "resumos/ADS/01-semestre/PensamentoComputacional/05-nocoes-de-programacao-manipulacao-de-imagens-digitais.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Pensamento Computacional",
+        data: "01/01/2025",
+        titulo: "A Revolução da Inteligência Artificial",
+        resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: A Revolução da Inteligência Artificial.",
+        tags: ["?"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+06",
+        link: "resumos/ADS/01-semestre/PensamentoComputacional/06-a-revolucao-da-inteligencia-artificial.html"
     }
 ];

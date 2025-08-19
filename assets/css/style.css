@@ -655,11 +655,17 @@ footer a:hover {
 .destaque-importante {
     background-color: rgba(141, 90, 60, 0.1);
     border-left: 4px solid var(--warning-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
 .destaque-perigo {
     background-color: rgba(249, 65, 68, 0.1);
     border-left: 4px solid var(--danger-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
 /* Blocos de código */
@@ -685,11 +691,14 @@ td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 th {
     background-color: var(--primary-color);
     color: var(--gray-600);
+    font-weight: bold;
+    position: sticky;
 }
 
 tr:nth-child(even) {

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamento Computacional - ADS </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Noções de Programação: Exemplos com Manipulação de Imagens Digitais</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Definir instruções para manipulação simples de dados.</li>
+                    <li>Distinguir a estrutura de repetição for.</li>
+                    <li>Reconhecer expressões usadas em códigos de computador.</li>
+                    <li>Distinguir a estrutura condicional if.</li>
+                    <li>Entender conceitos de programação dinâmica em páginas HTML utilizando PHP.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Resumo</h2>
+                <p>A programação é a forma de <strong>ensinar o computador a realizar tarefas específicas</strong>. No contexto da <strong>manipulação de imagens digitais</strong>, isso envolve instruções que alteram pixels individualmente ou conjuntos de pixels, permitindo criar efeitos, ajustar cores ou modificar a dimensão de uma imagem.</p>
+                <ol>
+                    <li><strong>Manipulação singular de dados</strong>
+                    <p>Cada pixel de uma imagem possui informações de cor e intensidade (por exemplo, RGB). Funções como setRed(), setGreen() e setBlue() permitem ajustar os valores de cada canal de cor de forma individual.</p>
+                    <p>&rarr; Exemplo em pseudocódigo:</p>
+                    <div class="bloco-codigo">
+                        <pre>
+Para cada pixel na imagem:
+    aumentar vermelho em 50
+    reduzir azul em 20
+                        </pre>
+                    </div>
+                    </li>
+                    <li><strong>Estruturas de repetição: for</strong>
+                    <p>Estruturas de repetição permitem executar a mesma instrução várias vezes, essencial ao manipular imagens, pois é preciso percorrer cada pixel.</p>
+                    <p>&rarr; Exemplo em Python:</p>
+                    <div class="bloco-codigo">
+                        <pre>
+for x in range(largura):
+    for y in range(altura):
+        r, g, b = imagem.getpixel((x, y))
+        imagem.putpixel((x, y), (r+50, g, b))  # aumenta vermelho
+                        </pre>
+                    </div>
+                    </li>
+                    <li><strong>Expressões em código de computador</strong>
+                    <p>Expressões combinam valores, operadores e funções que produzem um resultado. Na manipulação de imagens, permitem ajustar cores, calcular médias ou converter imagens para tons de cinza.</p>
+                    <p>&rarr; Exemplo em Python:</p>
+                    <div class="bloco-codigo">
+                        <pre>
+gray = int((r + g + b) / 3)
+imagem.putpixel((x, y), (gray, gray, gray))
+                        </pre>
+                    </div>
+                    </li>
+                    <li><strong>Estrutura condicional: if</strong>
+                    <p>As estruturas condicionais permitem tomar decisões no código. Podemos alterar apenas os pixels que atendam a uma condição, como os que têm vermelho acima de 100.</p>
+                    <p>&rarr; Exemplo em Python:</p>
+                    <div class="bloco-codigo">
+                        <pre>
+if r &gt; 100:
+    imagem.putpixel((x, y), (255, g, b))
+                        </pre>
+                    </div>
+                    </li>
+                    <li><strong>Programação dinâmica em páginas HTML com PHP</strong>
+                    <p>A programação dinâmica permite criar páginas web que mudam seu conteúdo com base em dados ou interações do usuário. Por exemplo, podemos usar PHP para gerar conteúdo HTML que exibe imagens manipuladas ou resultados de cálculos automaticamente.</p>
+                    <p>&rarr; Exemplo simples:</p>
+                    <div class="bloco-codigo">
+                        <pre>
+&lt;?php
+$cor = "vermelho";
+echo "&lt;h1&gt;A cor escolhida é $cor&lt;/h1&gt;";
+?&gt;
+                        </pre>
+                    </div>
+                    <p>Esse código gera dinamicamente um cabeçalho HTML exibindo a cor escolhida, mostrando como PHP pode interagir com dados e modificar a página sem intervenção manual.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Aplicações práticas</h2>
+                <ul>
+                    <li>Ajuste de cores de forma seletiva (RGB)</li>
+                    <li>Conversão de imagens para grayscale</li>
+                    <li>Criação de filtros simples</li>
+                    <li>Redimensionamento e manipulação de imagens</li>
+                    <li>Uso de loops e condições para manipular pixels de forma sistemática</li>
+                    <li>Desenvolvimento de páginas HTML dinâmicas com PHP</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Exercícios Para Fixar o Conteúdo</h2>
+                <div class="destaque-importante">
+                    <ol>
+                        <li><strong>Exercício: </strong>Aumente o valor do canal azul de todos os pixels de uma imagem em 30.
+                        <p><strong>Resposta:</strong></p>
+                        <p>Python</p>
+                        <div class="bloco-codigo">
+                            <pre>
+for x in range(largura):
+    for y in range(altura):
+        r, g, b = imagem.getpixel((x, y))
+        imagem.putpixel((x, y), (r, g, b+30))
+                            </pre>
+                        </div>
+                    </li>
+                    <li><strong>Exercício: </strong>Reduza o verde em metade apenas para pixels com verde maior que 120.
+                    <p><strong>Resposta:</strong></p>
+                    <p>Python</p>
+                    <div class="bloco-codigo">
+                        <pre>
+for x in range(largura):
+    for y in range(altura):
+        r, g, b = imagem.getpixel((x, y))
+        if g &gt; 120:
+            imagem.putpixel((x, y), (r, g//2, b))
+                        </pre>
+                    </div>
+                    </li>
+                    <li><strong>Exercício: </strong>Converta uma imagem colorida para grayscale usando a média dos canais RGB.
+                    <p><strong>Resposta:</strong></p>
+                    <p>Python</p>
+                    <div class="bloco-codigo">
+                        <pre>
+for x in range(largura):
+    for y in range(altura):
+        r, g, b = imagem.getpixel((x, y))
+        gray = int((r + g + b) / 3)
+        imagem.putpixel((x, y), (gray, gray, gray))
+                        </pre>
+                    </div>
+                    </li>
+                    <li><strong>Exercício: </strong>Crie uma página HTML dinâmica usando PHP que mostre o nome de uma imagem escolhida pelo usuário.
+                    <p><strong>Resposta:</strong></p>
+                    <p>PHP</p>
+                    <div class="bloco-codigo">
+                        <pre>
+&lt;?php
+$imagem = "circulo.bmp";
+echo "&lt;h1&gt;Imagem selecionada: $imagem&lt;/h1&gt;";
+?&gt;
+                        </pre>
+                    </div>
+                    </li>
+                    </ol>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>
