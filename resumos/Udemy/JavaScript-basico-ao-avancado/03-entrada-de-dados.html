@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Udemy </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Entrada de Dados</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Entrada de Dados</h2>
+                <p>Os exemplos dessa aula demonstram como interagir com o usuário através do terminal usando o módulo readline do Node.js, capturando entrada de dados de maneira síncrona e assíncrona. Vamos detalhar os exemplos e explicar a importância das técnicas utilizadas.</p>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Entrada básica de dados</h2>
+                <p>Este exemplo ilustra o processo básico de interação com o usuário por meio do terminal, fazendo uma pergunta simples e recebendo a resposta.</p>
+                <ol>
+                    <li><strong>Importação e Configuração:</strong><ul>
+                        <li><strong>Importação do módulo readline:</strong> Utilizado para ler a entrada do usuário no terminal. Isso é feito através da função <strong>require</strong>, que importa módulos disponíveis no Node.js.</li>
+                        <li><strong>Criação da Interface:</strong> A interface de readline é criada com <strong>readline.createInterface</strong>, configurada para usar os streams padrão de entrada (<strong>process.stdin</strong>) e saída (<strong>process.stdout</strong>). Isso permite que o programa leia a entrada do teclado e escreva no terminal.</li>
+                    </ul></li>
+                    <li><strong>Leitura de Entrada:</strong><ul>
+                        <li><strong>Método question:</strong> Utilizado para fazer uma pergunta ao usuário. Este método aceita uma string de pergunta e uma função callback, que será executada quando o usuário fornecer uma resposta.</li>
+                    </ul></li>
+                    <li><strong>Tratamento de Resposta e Encerramento:</strong><ul>
+                        <li><strong>Função Callback:</strong> Recebe a resposta do usuário e a utiliza para exibir uma mensagem personalizada.</li>
+                        <li><strong>Fechamento da Interface:</strong> Essencial para encerrar o programa corretamente, evitando que fique pendente indefinidamente.</li>
+                    </ul></li>
+                </ol>
+                <div class="destaque">
+                    <ul>&rarr; <strong>Por que usar essas técnicas?</strong>
+                        <li><strong>Modularidade:</strong> O uso de módulos como readline facilita a organização do código e reuso de funcionalidades comuns.</li>
+                        <li><strong>Assincronia:</strong> O método question é assíncrono, permitindo que o programa execute outras tarefas enquanto espera pela entrada do usuário.</li>
+                        <li><strong>Manutenção do Estado do Programa:</strong> Fechar a interface de readline após o uso é crucial para liberar recursos e permitir que o programa termine sua execução naturalmente.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Entrevista Assíncrona com Promise</h2>
+                <p>Este exemplo avança na complexidade, usando Promises para gerenciar múltiplas entradas de forma assíncrona.</p>
+                <ol>
+                    <li><strong>Configuração Inicial:</strong><ul>
+                        <li>Semelhante ao primeiro exemplo, inclui a importação do módulo <strong>readline</strong> e a configuração da interface.</li>
+                    </ul></li>
+                    <li><strong>Função Assíncrona com Promises:</strong><ul>
+                        <li><strong>Definição de fazerPergunta:</strong> Função que encapsula <strong>rl.question</strong> em uma <strong>Promise</strong>, permitindo que seja usada com <strong>await</strong> para uma sequência de perguntas de maneira mais legível e gerenciável.</li>
+                        <li><strong>Resolução de Promises</strong>: Quando o usuário responde, a Promise é resolvida com a resposta, que pode então ser manipulada de maneira síncrona no fluxo do código</li>
+                    </ul></li>
+                    <li><strong>Coleta e Exibição de Respostas:</strong><ul>
+                        <li><strong>Função coletarRespostas:</strong> Utiliza <strong>await</strong> para pausar a execução do programa enquanto espera pelas respostas, criando um fluxo de execução claro e linear, apesar da natureza assíncrona das operações.</li>
+                        <li><strong>Exibição e Encerramento:</strong> As respostas são coletadas e exibidas em uma mensagem formatada, e a interface é fechada.</li>
+                    </ul></li>
+                </ol>
+                <div class="destaque">
+                    <ul>&rarr; <strong>Por que usar essas técnicas?</strong>
+                        <li><strong>Melhoria na Legibilidade:</strong> O uso de <strong>async/await</strong> com <strong>Promises</strong> torna o código assíncrono mais fácil de escrever e entender, comparado ao uso de callbacks aninhados.</li>
+                        <li><strong>Gerenciamento Eficiente de Fluxo Assíncrono:</strong> Permite a execução de várias operações assíncronas em uma sequência definida, sem bloquear o thread principal do Node.js.</li>
+                        <li><strong>Flexibilidade e Robustez:</strong> A abordagem com <strong>Promises</strong> e <strong>async/await</strong> fornece um controle robusto sobre o fluxo assíncrono, facilitando o tratamento de erros e a sincronização de processos dependentes.</li>
+                    </ul>
+                </div>
+                <div class="destaque-importante">
+                    <p>Ambos os exemplos demonstram práticas eficazes para a interação do usuário em aplicações Node.js, utilizando o módulo readline para capturar e manipular a entrada do usuário de forma síncrona e assíncrona, destacando a flexibilidade do JavaScript para lidar com diferentes padrões de entrada.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>

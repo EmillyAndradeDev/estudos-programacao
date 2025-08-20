@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Udemy </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Var, Let e Const</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>O que é Var, Let e Const?</h2>
+                <p>São declarações usadas para definir variáveis. Cada uma tem características e escopos diferentes que influenciam como valores são armazenados, acessados e modificados. A escolha entre eles afeta a manutenibilidade e o comportamento do código.</p>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Var</h2>
+                <ul><strong>Definições e Características:</strong>
+                    <li>É a forma mais antiga de declarar variáveis em JavaScript. As variáveis declaradas com <strong>var</strong> têm escopo de função ou são globais se declaradas fora de qualquer função.</li>
+                    <li>Sofrem hoisting, o que significa que são movidas para o topo de seu escopo funcional ou global, sendo inicializadas com <strong>undefined</strong> antes de sua declaração ser executada.</li>
+                    <p>&rarr; <strong>Exemplo:</strong></p>
+                    <div class="bloco-codigo">
+                        <pre>
+console.log(x); //undefined
+var x = 5;
+console.log(x);   //5
+                        </pre>
+                    </div>
+                    <p>&rarr; <strong>Uso:</strong></p>
+                    <li>Devido aos problemas com escopo e hoisting, o uso de var é frequentemente desaconselhado em favor de let e const, que oferecem controle de escopo mais previsível.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Let</h2>
+                <ul><strong>Definição e Características:</strong>
+                    <li>Permite declarar variáveis com escopo de bloco, o que significa que a variável só existe dentro do bloco { } onde foi declarada.</li>
+                    <li>Não sofrem hoisting de uma forma que possam ser acessadas antes da declaração. A tentativa de usá-las antes da declaração resulta em um ReferenceError.</li>
+                    <p>&rarr; <strong>Exemplo:</strong></p>
+                    <div class="bloco-codigo">
+                        <pre>
+if (true){
+  let y = 5;
+}
+console.log(y);   //ReferenceError
+                        </pre>
+                    </div>
+                    <p>&rarr; <strong>Uso:</strong></p>
+                    <li>let é preferido para declarar variáveis em blocos de código específicos, especialmente em loops e condições, onde o controle de escopo é restrito e benéfico.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Const</h2>
+                <ul><strong>Definição e Características:</strong>
+                    <li>Assim como let, a const tem escopo de bloco.</li>
+                    <li>As variáveis declaradas com const devem ser inicializadas na declaração e não podem ser reatribuídas após sua inicialização. No entando, se o valor for um objeto, suas propriedades podem ser modificadas.</li>
+                    <li>Assim como let, tentar acessar uma const antes de sua declaração resultará em ReferenceError.</li>
+                    <p>&rarr; <strong>Exemplo:</strong></p>
+                    <div class="bloco-codigo">
+                        <pre>
+const z = 10;
+z = 5;  //TypeError: Assignment to constant variable.
+
+const obj = { a: 1 };
+obj.a = 2;  //isso é permitido
+console.log(obj);  //{ a: 2 }  
+                        </pre>
+                    </div>
+                    <p>&rarr; <strong>Uso:</strong></p>
+                    <li>const é ideal para declarar constantes cujo valor não deve mudar e também para garantir que objetos e arrays declarados não sejam completamente reatribuídos, proporcionando um nível de proteção adicional ao seu código.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Resumo</h2>
+                <div class="destaque">
+                  <p><strong>Conclusão:</strong> A escolha entre var, let e const depende do contexto de uso:</p>  
+                </div>
+                <ul>
+                    <li>Use <strong>var</strong> em situações em que precisar de compatibilidade com código JavaScript muito antigo, mas geralmente evite-a devido ao seu escopo funcional amplo e hoisting.</li>
+                    <li>Use <strong>let</strong> quando precisar de variáveis com escopo limitado a blocos, especialmente útil em loops e condições.</li>
+                    <li>Use <strong>const</strong> quando quiser garantir que o valor da variável não seja alterado após sua inicialização, o que é útil para manter a constância e a segurança em seu código.</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>

@@ -182,8 +182,59 @@ const resumos = [
         data: "01/01/2025",
         titulo: "A Revolução da Inteligência Artificial",
         resumo: "Conteúdo da matéria: Pensamento Computacional. Tema: A Revolução da Inteligência Artificial.",
-        tags: ["?"],
+        tags: ["Inteligência Artificial", "IA", "IA Generativa", "Engenharia de Prompt", "Ética e Responsabilidade"],
         thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Pensamento+Computacional:+06",
         link: "resumos/ADS/01-semestre/PensamentoComputacional/06-a-revolucao-da-inteligencia-artificial.html"
+    },
+
+    {
+        curso: "Udemy - JavaScript",
+        data: "01/01/2025",
+        titulo: "Tipos de Dados",
+        resumo: "Entender os diferentes tipos de dados é crucial para programar eficazmente e evitar erros comuns.",
+        tags: ["Number", "String", "Boolean", "Undefined", "Null", "Symbol", "BigInt"],
+        thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+01",
+        link: "resumos/Udemy/JavaScript-basico-ao-avancado/01-tipos-de-dados.html"
+    },
+
+    {
+        curso: "Udemy - JavaScript",
+        data: "01/01/2025",
+        titulo: "Var, Let, Const",
+        resumo: "Entender os diferentes tipos de dados é crucial para programar eficazmente e evitar erros comuns.",
+        tags: ["Var", "Let", "Const"],
+        thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+02",
+        link: "resumos/Udemy/JavaScript-basico-ao-avancado/02-var-let-const.html"
+    },
+
+    {
+        curso: "Udemy - JavaScript",
+        data: "01/01/2025",
+        titulo: "Condicionais If com Operadores",
+        resumo: "O if é uma das estruturas de controle de fluxo mais fundamentais em JavaScript, utilizada para executar blocos de código condicionalmente...",
+        tags: ["Condicionais if", "Estrutura if", "if, else, else if", "Operadores Relacionais", "Operadores Lógicos"],
+        thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+03",
+        link: "resumos/Udemy/JavaScript-basico-ao-avancado/04-condicionais-if-com-operadores.html"
+    },
+
+    {
+        curso: "Udemy - JavaScript",
+        data: "01/01/2025",
+        titulo: "Switch Case",
+        resumo: "O comando switch em JavaScript é uma ferramenta útil para gerenciar múltiplos caminhos de execução com base no valor de uma variável.",
+        tags: ["O que é Switch?", "Estrutura do switch", "Para que serve o switch?", "Quando usar o switch?"],
+        thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+04",
+        link: "resumos/Udemy/JavaScript-basico-ao-avancado/05-switch-case.html"
+    }, 
+
+    {
+        curso: "Udemy - JavaScript",
+        data: "01/01/2025",
+        titulo: "Loop For",
+        resumo: "O for é uma das estruturas de controle de loop mais fundamentais em JavaScript...",
+        tags: ["O que é for?", "Estrutura Básica do Loop for", "Para que serve o for?", "Quando usar o for?", "Loop for em JavaScript"],
+        thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+05",
+        link: "resumos/Udemy/JavaScript-basico-ao-avancado/06-for.html"
     }
+
 ];

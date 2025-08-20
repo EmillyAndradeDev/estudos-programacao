@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Udemy </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Switch Case</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>O que é Switch?</h2>
+                <p>O comando <strong>switch</strong> em JavaScript é uma <strong>estrutura de controle de fluxo</strong> usada para executar diferentes ações com base em diferentes condições. É uma alternativa ao if...else que pode tornar o código mais organizado e legível quando você tem múltiplos caminhos de execução, baseados no valor de uma única variável ou expressão.</p>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Estrutura do switch</h2>
+                <p>A estrutura switch avalia uma expressão e executa o bloco de código correspondente ao case que combina com o valor da expressão. Se nenhum case corresponde, o bloco default (se presente) é executado.</p>
+                <p>&rarr; A sintaxe básica de um switch em JavaScript é a seguinte:</p>
+                <div class="bloco-codigo">
+                    <pre>
+switch (expressao) {
+    case valor1:
+        // Bloco de código para valor1
+        break;
+    case valor2:
+        // Bloco de código para valor2
+        break;
+    default:
+        // Bloco de código padrão
+}
+                    </pre>
+                </div>
+                <ul>
+                    <li><strong>expressao:</strong> A variável ou valor que será comparado nos diferentes case.</li>
+                    <li><strong>case:</strong> Cada case seguido por um valor testa se a expressão corresponde a esse valor. Se corresponder, o bloco de código associado é executado.</li>
+                    <li><strong>break:</strong> A palavra-chave break é usada para sair do switch uma vez que o caso correspondente tenha sido executado. Sem o break, o JavaScript continua executando os casos subsequentes até encontrar um break ou o final do switch.</li>
+                    <li><strong>default:</strong> Este é um bloco opcional que é executado se nenhum dos casos corresponder à expressão. É semelhante à cláusula else em uma estrutura if...else.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Para que serve o switch?</h2>
+                <ol>O switch é útil para várias situações:
+                    <li><strong>Quando você tem múltiplas condições que dependem do valor de uma única variável: </strong>Isso pode simplificar o código em comparação com múltiplos if...else if...else, especialmente se a mesma variável está sendo testada em cada condição.</li>
+                    <li><strong>Para substituir múltiplos if...else encadeados:</strong> Em alguns casos, um switch pode ser mais legível e direto.</li>
+                    <li><strong>Quando você espera que uma variável tenha um entre poucos valores possíveis e distintos: </strong>O switch permite que você lide claramente com cada caso individual.</li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Quando usar o switch?</h2>
+                <ul>
+                    <li>Quando você tem uma variável que será comparada contra várias constantes.</li>
+                    <li>Quando cada condição executa um bloco de código substancialmente diferente.</li>
+                    <li>Quando a clareza e a manutenção do código são prioridades.</li>
+                </ul>
+                <p>O switch é uma ferramenta poderosa em JavaScript para controlar o fluxo com base em condições específicas, proporcionando um código mais limpo e gerenciável, especialmente útil em cenários com múltiplas condições que dependem do mesmo valor de variável.</p>
+                <h3>Vantagens do uso do switch</h3>
+                <ol>
+                    <li><strong>Legibilidade: </strong>O switch torna o código mais organizado e fácil de ler, especialmente quando comparando a mesma variável a múltiplos valores.</li>
+                    <li><strong>Manutenção: </strong>É mais simples de modificar um switch do que múltiplos blocos if...else porque a estrutura é mais clara e os valores são todos checados no mesmo lugar.</li>
+                    <li><strong>Performance: </strong>Em alguns casos, switch pode ser mais eficiente que if...else devido à forma como os compiladores e interpretadores otimizam a estrutura de salto.</li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Exemplo prático</h2>
+                <p>&rarr; Aqui está um exemplo de como usar o switch para controlar o fluxo do programa com base no dia da semana:</p>
+                <div class="bloco-codigo">
+                    <pre>
+let dia = new Date().getDay(); // Retorna um número, de 0 (domingo) a 6 (sábado)
+
+switch (dia) {
+    case 0:
+        console.log("Domingo");
+        break;
+    case 1:
+        console.log("Segunda-feira");
+        break;
+    case 2:
+        console.log("Terça-feira");
+        break;
+    case 3:
+        console.log("Quarta-feira");
+        break;
+    case 4:
+        console.log("Quinta-feira");
+        break;
+    case 5:
+        console.log("Sexta-feira");
+        break;
+    case 6:
+        console.log("Sábado");
+        break;
+    default:
+        console.log("Dia inválido");
+}
+                    </pre>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Conclusão</h2>
+                <div class="destaque">
+                    <p>O comando switch em JavaScript é uma ferramenta útil para gerenciar múltiplos caminhos de execução com base no valor de uma variável. Ele fornece uma maneira estruturada e legível de organizar blocos de código que devem ser executados para valores específicos de uma expressão, ajudando a manter o código claro e fácil de manter, especialmente em cenários complexos de decisão.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>
