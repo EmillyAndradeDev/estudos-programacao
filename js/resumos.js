@@ -235,6 +235,16 @@ const resumos = [
         tags: ["O que é for?", "Estrutura Básica do Loop for", "Para que serve o for?", "Quando usar o for?", "Loop for em JavaScript"],
         thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+05",
         link: "resumos/Udemy/JavaScript-basico-ao-avancado/06-for.html"
+    },
+
+    {
+        curso: "Udemy - JavaScript",
+        data: "01/01/2025",
+        titulo: "Função",
+        resumo: "...",
+        tags: ["?"],
+        thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+06",
+        link: "resumos/Udemy/JavaScript-basico-ao-avancado/07-funcao.html"
     }
 
 ];
