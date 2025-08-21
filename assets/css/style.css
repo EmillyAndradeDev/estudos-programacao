@@ -713,6 +713,10 @@ ul {
     list-style: circle;
 }
 
+ul > li > ul {
+    list-style: disc;
+}
+
 a {
     color: var(--realce);
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Redes de Computadores - ADS </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Redes de Computadores e a Internet</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Reconhecer os conceitos básicos de redes de computadores e a internet.</li>
+                    <li>Descrever os parâmetros de avaliação das redes.</li>
+                    <li>Identificar a arquitetura de redes de computadores como um modelo em camadas.</li>
+                    <li>Descrever os aspectos da evolução das redes e a internet.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>O que é a Internet?</h2>
+                <p>A Internet é <strong>uma rede global de computadores interconectados</strong> que permite a comunicação e o compartilhamento de informações entre dispositivos. Ela pode ser compreendida em três grandes partes:</p>
+                <ul>
+                    <li><strong>Sistemas finais (hosts):</strong>computadores, smartphones, servidores e qualquer dispositivo que gera ou consome dados.</li>
+                    <li><strong>Núcleo da rede: </strong>formado por roteadores e enlaces que encaminham os pacotes de dados entre diferentes redes. É responsável por garantir que as informações cheguem ao destino.</li>
+                    <li><strong>Redes de acesso:</strong>conexões que permitem que os usuários se conectem à internet (Wi-Fi, fibra óptica, 4G/5G, ADSL).</li>
+                </ul>
+                <div class="destaque">
+                    <p>As <strong>redes de computadores</strong> são a base da comunicação digital moderna, conectando pessoas, empresas e dispositivos em escala global. A <strong>Internet</strong>, como maior rede mundial, é formada por três grandes partes: os <strong>sistemas finais</strong> (como computadores, smartphones e servidores), o <strong>núcleo da rede</strong> (composto por roteadores e enlaces responsáveis por direcionar os dados) e as <strong>redes de acesso</strong> (a parte que conecta o usuário à internet, como Wi-Fi doméstico, 4G/5G e fibra óptica).</p>
+                    <p>&rarr; quando você acessa o WhatsApp do celular, seu aparelho é o sistema final, o sinal da sua operadora é a rede de acesso e os roteadores que levam a mensagem até o servidor do WhatsApp fazem parte do núcleo da rede.</p>
+                </div>
+
+                <div class="destaque">
+                    <p>O <strong>entorno da internet</strong> envolve a interação entre redes domésticas, corporativas e de grandes provedores. As <strong>redes de acesso</strong> podem ser domésticas (como seu Wi-Fi de casa) ou institucionais (como a rede da faculdade ou da empresa). Já o <strong>núcleo da rede</strong> garante que as informações circulem de um ponto a outro com eficiência, permitindo que serviços como e-mails, redes sociais e jogos online funcionem.</p>
+                    <p>&rarr; ao usar um notebook em uma rede institucional da universidade, você está conectado a uma rede de acesso institucional que, por sua vez, se conecta ao núcleo da internet.</p>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Conceitos básicos</h2>
+                <ul>
+                    <li><strong>O entorno da internet: </strong>inclui toda a infraestrutura que suporta a comunicação digital (provedores, redes locais, cabeamento, satélites).</li>
+                    <li><strong>Redes de acesso: </strong>são o elo entre o usuário e a internet. Podem ser domésticas (banda larga, cabo, fibra) ou móveis (4G, 5G).</li>
+                    <li><strong>Redes institucionais: </strong>usadas em empresas, escolas e universidades, geralmente com maior controle, segurança e desempenho.</li>
+                    <li><strong>Núcleo da rede: </strong>funciona como o "coração" da internet, transportando pacotes de um ponto a outro de forma eficiente.</li>
+                    <li><strong>A rede como serviço: </strong>fornece funcionalidades como web, e-mail, streaming, jogos online, entre outros, permitindo diferentes aplicações sobre a mesma infraestrutura.</li>
+                </ul>
+                <div class="destaque">
+                    <p>O <strong>entorno da internet</strong> envolve a interação entre redes domésticas, corporativas e de grandes provedores. As <strong>redes de acesso</strong> podem ser domésticas (como seu Wi-Fi de casa) ou institucionais (como a rede da faculdade ou da empresa). Já o <strong>núcleo da rede</strong> garante que as informações circulem de um ponto a outro com eficiência, permitindo que serviços como e-mails, redes sociais e jogos online funcionem.</p>
+                    <p>&rarr; ao usar um notebook em uma rede institucional da universidade, você está conectado a uma rede de acesso institucional que, por sua vez, se conecta ao núcleo da internet.</p>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Parâmetros de avaliação das redes</h2>
+                <ul>Para avaliar a eficiência de uma rede, analisamos:
+                    <li><strong>Atraso em redes de comutação de pacotes: </strong>tempo que um pacote leva para atravessar a rede.</li>
+                    <li><strong>Tipos de atraso:</strong>
+                    <ul>
+                        <li>Atraso de processamento (tempo de analisar o pacote no roteador).</li>
+                        <li>Atraso de enfileiramento (espera em filas devido ao tráfego intenso).</li>
+                        <li>Atraso de transmissão (tempo para enviar bits pelo enlace).</li>
+                        <li>Atraso de propagação (tempo que o sinal leva para percorrer o meio físico).</li>
+                    </ul></li>
+                    <li><strong>Perda: </strong>ocorre quando pacotes são descartados devido a congestionamentos.</li>
+                    <li><strong>Atraso fim a fim: </strong>soma de todos os atrasos enfrentados desde a origem até o destino.</li>
+                    <li><strong>Vazão: </strong>quantidade de dados transmitidos por segundo, medida em bits por segundo (bps).</li>
+                </ul>
+                <div class="destaque">
+                    <p>Os <strong>parâmetros de avaliação</strong> ajudam a medir a qualidade da rede. O <strong>atraso em redes de comutação de pacotes</strong> pode ocorrer em diferentes pontos (fila de roteadores, transmissão, propagação do sinal). Temos ainda a <strong>perda de pacotes</strong> (quando informações se perdem no caminho), o <strong>atraso fim a fim</strong> (tempo total entre envio e recebimento) e a <strong>vazão</strong> (quantidade de dados transmitidos por segundo).</p>
+                    <p>&rarr; quando um vídeo trava no YouTube, pode estar ocorrendo atraso ou baixa vazão. Já em uma chamada no Google Meet, a voz cortada é sinal de perda de pacotes.</p>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Camadas de protocolo e modelos de serviço</h2>
+                <p>As redes de computadores seguem uma <strong>arquitetura em camadas</strong>, onde cada camada desempenha uma função específica.</p>
+                <ul>
+                    <li><strong>Arquitetura de camadas: </strong>organiza a comunicação em níveis, simplificando o desenvolvimento e a compatibilidade entre sistemas.</li>
+                    <li><strong>Primeiro modelo de camadas (OSI): </strong>possui 7 camadas: Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação.</li>
+                    <li><strong>Modelo TCP/IP (Internet): </strong>é o modelo adotado na prática, com 4 camadas: Acesso à rede, Internet, Transporte e Aplicação.</li>
+                    <li><strong>Encapsulamento: </strong>processo em que cada camada adiciona informações de controle (cabeçalhos) ao pacote antes de enviá-lo para a camada inferior.</li>
+                </ul>
+                <div class="destaque">
+                    <p>A <strong>arquitetura de camadas e modelos de serviço</strong> organiza a comunicação em diferentes níveis. O primeiro modelo de referência foi o <strong>OSI (com 7 camadas)</strong>, mas o modelo <strong>TCP/IP (com 4 camadas)</strong> se tornou o padrão na internet. O <strong>encapsulamento </strong>garante que os dados sejam organizados em pacotes contendo endereços e informações de controle, permitindo que cheguem corretamente ao destino.</p>
+                    <p>&rarr; quando você envia uma foto no Instagram, ela é encapsulada em pacotes que passam pelas camadas de aplicação, transporte, rede e enlace até chegar ao servidor do Instagram.</p>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>História da Internet</h2>
+                <p>A Internet surgiu a partir de pesquisas militares e acadêmicas.</p>
+                <ul>
+                    <li><strong>Anos 1960: </strong>criação da ARPANET, nos EUA, primeira rede de comutação de pacotes.</li>
+                    <li><strong>Anos 1970: </strong>desenvolvimento do protocolo TCP/IP, que permitiu a interconexão de diferentes redes.</li>
+                    <li><strong>Anos 1980: </strong>expansão para universidades e centros de pesquisa.</li>
+                    <li><strong>Anos 1990: </strong>popularização da World Wide Web (WWW), tornando a Internet acessível ao público geral.</li>
+                    <li><strong>Hoje: </strong>a Internet é a base de quase todas as atividades digitais – redes sociais, e-commerce, streaming, serviços em nuvem e IoT.</li>
+                </ul>
+                <div class="destaque">
+                    <p>O histórico da internet mostra que ela nasceu na década de 1960, com a ARPANET, e evoluiu até se tornar a rede mundial que conhecemos hoje. Do compartilhamento de dados entre universidades, passou a conectar milhões de pessoas e se tornou essencial para a vida moderna.</p>
+                    <p>&rarr; no passado, um estudante precisava ir a uma biblioteca para acessar informações. Hoje, graças à evolução da internet, basta uma pesquisa no Google para ter milhões de resultados em segundos.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>

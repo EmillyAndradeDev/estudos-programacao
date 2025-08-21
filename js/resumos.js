@@ -188,6 +188,26 @@ const resumos = [
     },
 
     {
+        curso: "Análise e Desenvolvimento de Sistemas - Fundamentos de Redes de Computadores",
+        data: "01/01/2025",
+        titulo: "Redes de Computadores e a Internet",
+        resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Redes de Computadores e a Internet.",
+        tags: ["O que é a Internet?", "Conceitos básicos", "Parâmetros de avaliação das redes", "Camadas de protocolo e modelos de serviço", "História da Internet"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+01",
+        link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/01-redes-de-computadores-e-a-internet.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Fundamentos de Redes de Computadores",
+        data: "01/01/2025",
+        titulo: "Modelo de Referência Osi e Arquitetura Tcp/ip",
+        resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Modelo de Referência Osi e Arquitetura Tcp/ip.",
+        tags: ["."],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+02",
+        link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/02-modelo-de-referencia-osi-e-arquitetura-tcp-ip.html"
+    },
+
+    {
         curso: "Udemy - JavaScript",
         data: "01/01/2025",
         titulo: "Tipos de Dados",
