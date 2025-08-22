@@ -202,9 +202,29 @@ const resumos = [
         data: "01/01/2025",
         titulo: "Modelo de Referência Osi e Arquitetura Tcp/ip",
         resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Modelo de Referência Osi e Arquitetura Tcp/ip.",
-        tags: ["."],
+        tags: ["Divisão da estrutura das redes em camadas", "Camadas do Modelo OSI", "Camadas da Arquitetura TCP/IP", "Comparação OSI x TCP/IP"],
         thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+02",
         link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/02-modelo-de-referencia-osi-e-arquitetura-tcp-ip.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Fundamentos de Redes de Computadores",
+        data: "01/01/2025",
+        titulo: "Camadas de Aplicação e Transporte",
+        resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Camadas de Aplicação e Transporte",
+        tags: ["Arquiteturas e Camada de Aplicação", "Serviços da Camada de Aplicação", "Elementos da Camada de Transporte", "Serviços da Camada de Transporte"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+03",
+        link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/03-camadas-de-aplicacao-e-transporte.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Fundamentos de Redes de Computadores",
+        data: "01/01/2025",
+        titulo: "Camada de Rede",
+        resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Camada de Rede",
+        tags: [""],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+04",
+        link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/04-camada-de-rede.html"
     },
 
     {
@@ -261,8 +281,8 @@ const resumos = [
         curso: "Udemy - JavaScript",
         data: "01/01/2025",
         titulo: "Função",
-        resumo: "...",
-        tags: ["?"],
+        resumo: "Funções são uma das construções mais importantes em JavaScript, permitindo a criação de código mais limpo, mais flexível e mais fácil de manter.",
+        tags: ["O que é Função?", "Estrutura de uma Função", "Para que serve uma Função?", "Quando usar Funções?"],
         thumbnail: "https://placehold.co/600x400/48284A/white?text=JavaScript:+06",
         link: "resumos/Udemy/JavaScript-basico-ao-avancado/07-funcao.html"
     }

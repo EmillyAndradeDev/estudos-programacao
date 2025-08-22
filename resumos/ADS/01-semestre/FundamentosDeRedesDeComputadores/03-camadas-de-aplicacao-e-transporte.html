@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Redes de Computadores - ADS </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Camadas de Aplicação e Transporte</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Reconhecer as arquiteturas de aplicações.</li>
+                    <li>Identificar os principais serviços oferecidos pela camada de aplicação.</li>
+                    <li>Localizar os elementos da camada de transporte.</li>
+                    <li>Comparar os serviços oferecidos pela camada de transporte.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Arquiteturas e Camada de Aplicação</h2>
+                <ol>
+                    <li><strong>Camada de Aplicação</strong>
+                    <ul>
+                        <li>É onde os usuários e processos interagem diretamente com a rede.</li>
+                        <li>Fornece serviços para troca de dados entre aplicações distribuídas</li>
+                    </ul></li>
+                    <li><strong>Arquiteturas de Aplicações</strong>
+                    <ul>
+                        <li><strong>Cliente-Servidor:</strong> <ul>
+                            <li>O cliente faz requisições.</li>
+                            <li>O servidor fornece respostas.</li>
+                            <li>Exemplo: Navegador (cliente) e YouTube/Google (servidor).</li>
+                        </ul></li>
+                        <li><strong>Peer-to-Peer (P2P):</strong> <ul>
+                            <li>Todos os nós podem atuar como clientes e servidores.</li>
+                            <li>Exemplo: redes de compartilhamento de arquivos (BitTorrent).</li>
+                        </ul></li>
+                    </ul></li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Serviços da Camada de Aplicação</h2>
+                <ul>
+                    <li><strong>Protocolos mais importantes:</strong> <ul>
+                        <li><strong>HTTP/HTTPS</strong> → Web (navegação, vídeos, sites).</li>
+                        <li><strong>SMTP, POP3, IMAP</strong> → Correio eletrônico.</li>
+                        <li><strong>DNS</strong> → Serviço de nomes (tradução de nomes de domínio em endereços IP).</li>
+                    </ul></li>
+                    <li><strong>Funcionamento do Serviço Web (HTTP)</strong>
+                    <ul>
+                        <li>Cliente envia requisição ao servidor (GET/POST).</li>
+                        <li>Servidor responde com código de status (200 OK, 404 Not Found).</li>
+                        <li>O navegador interpreta e exibe o conteúdo.</li>
+                    </ul></li>
+                    <li><strong>Correio eletrônico</strong>
+                    <ul>
+                        <li><strong>SMTP (Simple Mail Transfer Protocol):</strong> envia mensagens entre servidores.</li>
+                        <li><strong>POP3 (Post Office Protocol):</strong> baixa mensagens para o cliente (remove do servidor).</li>
+                        <li><strong>IMAP (Internet Message Access Protocol):</strong> acessa mensagens diretamente no servidor (sincronização).</li>
+                    </ul></li>
+                    <li><strong>Serviço de Nomes - DNS</strong>
+                    <ul>
+                        <li>Converte nomes (<a href="www.exemplo.com" target="_blank" rel="external">www.exemplo.com</a>) em endereços IP.</li>
+                        <li>Funciona como uma "agenda telefônica da Internet".</li>
+                        <li>Utiliza servidores distribuídos hierarquicamente.</li>
+                    </ul></li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Elementos da Camada de Transporte</h2>
+                <ol>
+                    <li><strong>Funções principais:</strong>
+                        <ul>
+                            <li>Garante comunicação processo a processo (não apenas máquina a máquina).</li>
+                            <li>Faz a multiplexação/demultiplexação: <ul>
+                                <li>Multiplexação → Vários processos usam a mesma conexão.</li>
+                                <li>Demultiplexação → Identificação correta do processo de destino por meio das portas.</li>
+                            </ul></li>
+                        </ul></li>
+                    <li><strong>Endereçamento (Portas):</strong> <ul>
+                        <li>Cada processo tem um número de porta único.</li>
+                        <li>Exemplos: <ul>
+                            <li>HTTP → Porta 80</li>
+                            <li>HTTPS → Porta 443</li>
+                            <li>SMTP → Porta 25</li>
+                        </ul></li>
+                    </ul></li>
+                    <li><strong>Cabeçalhos da Camada de Transporte</strong> <ul>
+                        <li>Contêm informações para identificar portas, controle de erro e ordem dos dados.</li>
+                    </ul></li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Serviços da Camada de Transporte</h2>
+                <ol>
+                    <li><strong>Protocolos principais:</strong> <ul>
+                        <li><strong>UDP</strong> (User Datagram Protocol) <ul>
+                            <li>Não confiável (sem garantia de entrega).</li>
+                            <li>Mais rápido, usado em streaming, jogos online e VoIP.</li>
+                        </ul></li>
+                        <li><strong>TCP</strong> (Transmission Control Protocol) <ul>
+                            <li>Confiável (garante entrega, ordem e integridade dos dados).</li>
+                            <li>Usado em navegação, e-mails, downloads.</li>
+                        </ul></li>
+                    </ul></li>
+                    <li><strong>Modelo de serviço TCP</strong> <ul>
+                        <li><strong>Orientado à conexão: </strong>antes de transferir dados, precisa do "handshake" (3 vias).</li>
+                        <li><strong>Controle de fluxo e congestionamento:</strong> ajusta velocidade de envio.</li>
+                        <li><strong>Retransmissão </strong>em caso de perda de pacotes.</li>
+                    </ul></li>
+                    <li><strong>Mecanismos de confiabilidade</strong> <ul>
+                        <li><strong>Go-Back-N: </strong>retransmite todos os pacotes a partir de um erro.</li>
+                        <li><strong>Selective Repeat: </strong>retransmite apenas os pacotes perdidos.</li>
+                    </ul></li>
+                    <li><strong>Tipos de portas</strong> <ul>
+                        <li><strong>Bem conhecidas (0-1023):</strong> usadas por serviços padrão (HTTP, DNS, SMTP).</li>
+                        <li><strong>Registradas (1024-49151):</strong> usadas por aplicações específicas.</li>
+                        <li><strong>Dinâmicas/Privadas (49152-65535):</strong> usadas temporariamente pelos clientes.</li>
+                    </ul></li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <div class="destaque">
+                    <ul>
+                        <li><strong>Camada de Aplicação</strong> → Interação com o usuário (HTTP, DNS, SMTP, POP3, IMAP).</li>
+                        <li><strong>Camada de Transporte</strong> → Comunicação confiável ou não confiável entre processos (TCP x UDP).</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>
