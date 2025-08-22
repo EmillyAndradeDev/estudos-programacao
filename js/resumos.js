@@ -222,9 +222,29 @@ const resumos = [
         data: "01/01/2025",
         titulo: "Camada de Rede",
         resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Camada de Rede",
-        tags: [""],
+        tags: ["Conceitos Básicos da Camada de Rede (OSI)", "Configurações de Rede IP", "Protocolos de Controle", "Algoritmos de Roteamento", "Tipos de roteamento"],
         thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+04",
         link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/04-camada-de-rede.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Fundamentos de Redes de Computadores",
+        data: "01/01/2025",
+        titulo: "Camadas de Enlace e Física",
+        resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Camadas de Enlace e Física",
+        tags: ["Camada Física", "Camada de Enlace", "Subcamada de Acesso ao Meio (MAC)"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+05",
+        link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/05-camadas-de-enlace-e-fisica.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Fundamentos de Redes de Computadores",
+        data: "01/01/2025",
+        titulo: "Fundamentos de Administração e Segurança em Rede de Computadores",
+        resumo: "Conteúdo da matéria: Fundamentos de Redes de Computadores. Tema: Fundamentos de Administração e Segurança em Rede de Computadores",
+        tags: [""],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Fundamentos+de+Redes+de+Computadores:+06",
+        link: "resumos/ADS/01-semestre/FundamentosDeRedesDeComputadores/06-fundamentos-de-administracao-e-seguranca-em-rede-de-computadores.html"
     },
 
     {
