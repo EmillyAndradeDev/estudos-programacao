@@ -9,6 +9,7 @@
     --primary-dark: #c51162;
     /* Cor primária escura (rosa escuro) */
     --realce: #D96299;
+    --realceh4: #eb589d;
     --gray-100: #f3f4f6;
     /* Cinza claro */
     --gray-200: #e5e7eb;
@@ -625,6 +626,10 @@ footer a:hover {
 .resumo-section h3 {
     color: var(--realce);
     margin: 15px 0 10px;
+}
+
+.resumo-section h4 {
+    color: var(--realceh4);
 }
 
 .resumo-section p {

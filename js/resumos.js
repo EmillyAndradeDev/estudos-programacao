@@ -248,6 +248,36 @@ const resumos = [
     },
 
     {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Introdução",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Introdução",
+        tags: ["Introdução à Segurança da Informação"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+01",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/01-introducao.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Princípios da Segurança e o Ciclo de Vida da Informação",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Princípios da Segurança e o Ciclo de Vida da Informação",
+        tags: ["Princípios da Segurança da Informação e Ciclo de Vida"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+02",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/02-principios-da-seguranca-e-o-ciclo-de-vida-da-inormacao.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Ameaças e Vulnerabilidades à Segurança de Informação",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Ameaças e Vulnerabilidades à Segurança de Informação",
+        tags: ["Ameaças e Vulnerabilidades"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+03",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/03-ameacas-e-vulnerabilidades-a-seguranca-de-informacao.html"
+    },
+
+    {
         curso: "Udemy - JavaScript",
         data: "01/01/2025",
         titulo: "Tipos de Dados",

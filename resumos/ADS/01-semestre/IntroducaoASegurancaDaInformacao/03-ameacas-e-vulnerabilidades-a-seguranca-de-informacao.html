@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Segurança da Informação - ADS </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Ameaças e Vulnerabilidades à Segurança da Informação</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Propósitos e Objetivos</h2>
+                <ul>
+                    <li><strong>Propósito: </strong><ul>
+                        <li>Compreender a importância de identificar ameaças e vulnerabilidades para prevenir danos causados por ataques cibernéticos.</li>
+                    </ul></li>
+                    <li><strong>Objetivos:</strong><ul>
+                        <li>Identificar conceitos e tipos de ameaças e vulnerabilidades.</li>
+                        <li>Reconhecer técnicas usadas em ataques cibernéticos.</li>
+                    </ul></li>
+                </ul>
+                <h2>Introdução</h2>
+                <ul>
+                    <li>A Internet facilita nossa vida, mas também criou oportunidades para <strong>hackers explorarem vulnerabilidades</strong> em sistemas e serviços.</li>
+                    <li>Informações são <strong>ativos valiosos</strong>, que podem ser: <ul>
+                        <li><strong>Intangíveis:</strong> imagem da empresa, reputação.</li>
+                        <li><strong>Tangíveis:</strong> <ul>
+                            <li>Lógicos: dados, softwares, fórmulas, algoritmos.</li>
+                            <li>Físicos: equipamentos, infraestrutura.</li>
+                            <li>Humanos: colaboradores, especialistas.</li>
+                        </ul></li>
+                    </ul></li>
+                </ul>
+                <div class="destaque">
+                    <p>Perda de ativos pode gerar grandes prejuízos financeiros, como exemplificado pelo caso da Apple e Steve Jobs.</p>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Ameaças e Vulnerabilidades</h2>
+                <ul>
+                    <li><strong>Ameaça:</strong> qualquer evento que possa explorar uma vulnerabilidade e causar dano a um ativo.</li>               
+                    <strong>
+                        <li>Vulnerabilidade: fraqueza de um ativo que pode ser explorada por uma ameaça.</li>            
+                    </strong>
+                    <li><strong>Controle:</strong> medidas de proteção aplicadas para reduzir riscos (ex: criptografia, backup, firewalls).</li>
+                </ul>
+                <h3>Exemplo visual:</h3>
+                <ul>
+                    <li><strong>Ativo central:</strong> pen drive com dados.</li>      
+                    <li><strong>Vulnerabilidades:</strong> exposição física, falta de criptografia.</li>           
+                    <li><strong>Ameaças:</strong> bigorna, fogo.</li>      
+                    <li><strong>Controle:</strong> caixa de proteção, criptografia, backup.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                 <h2>Tipos de Ameaças e Vulnerabilidades</h2>
+                <ol>
+                    <li><strong>Quanto ao impacto nos ativos (CID):</strong>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspecto</th>
+                                <th>Ameaça</th>
+                                <th>Medida de Segurança</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Confidencialidade</td>
+                                <td>Acesso não autorizado</td>
+                                <td>Senhas, criptografia</td>
+                            </tr>
+                            <tr>
+                                <td>Integridade</td>
+                                <td>Alteração de dados por pessoa/software não autorizado</td>
+                                <td>Autenticação, hashes</td>
+                            </tr>
+                            <tr>
+                                <td>Disponibilidade</td>
+                                <td>Fenômenos naturais, ataques de negação de serviço</td>
+                                <td>Backup, redundância</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <li><strong>Quanto ao vetor de ataque:</strong><ul>
+                        <li><strong>Física:</strong> incêndios, enchentes, perda de mídias, falhas de energia.</li>
+                        <li><strong>Lógica:</strong> ataques de software, corrupção de dados, escuta de rede, ataques DDoS.</li>
+                        <li><strong>Humana:</strong> colaboradores mal treinados ou mal-intencionados, hackers.</li>
+                        <li><strong>Não humana:</strong> desastres naturais ou falhas de infraestrutura.</li>
+                    </ul></li>
+                    <li><strong>Subclassificação de ameaças não humanas:</strong><ul>
+                        <li>Desastres naturais (enchentes, terremotos).</li>
+                        <li>Problemas de infraestrutura (sobrecarga elétrica, falha de equipamentos).</li>
+                    </ul></li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Exemplos de Mitigação</h2>
+                <ul>
+                    <li>Incêndio: sprinklers, detectores de fumaça, brigada de incêndio, extintores.</li>    
+                    <li>Enchente: análise geográfica do data center, planejamento de contingência, redundância de servidores.</li>   
+                    <li>Falta de energia: uso de no-breaks, geradores e redundância elétrica.</li>  
+                    <li>Ataques lógicos: autenticação multifator, criptografia, backups, monitoramento contínuo.</li>
+                </ul>
+                <div class="destaque">
+                    <p>📌 <strong>Importante:</strong> a proteção deve ser feita em camadas, considerando tipo de ativo, vetor da ameaça e probabilidade de ocorrência.</p>
+                </div>
+                <h3>Conclusão</h3>
+                <ul>
+                    <li>A segurança da informação depende da identificação de ameaças e vulnerabilidades.</li>               
+                    <li>Cada ameaça pode afetar confidencialidade, integridade ou disponibilidade de um ativo.</li>          
+                    <li>Controles devem ser planejados conforme o tipo de ameaça, seu impacto e custo-benefício, garantindo que os ativos essenciais sejam protegidos de forma eficiente.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Técnicas para ataques cibernéticos</h2>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>
