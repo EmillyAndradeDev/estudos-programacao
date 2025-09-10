@@ -278,6 +278,26 @@ const resumos = [
     },
 
     {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Normas de Segurança da Informação",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Normas de Segurança da Informação",
+        tags: ["Normas de Segurança da Informação"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+04",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/04-normas-de-seguranca-da-informacao.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Boas Práticas em Segurança da Informação",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Boas Práticas em Segurança da Informação",
+        tags: ["Boas Práticas em Segurança da Informação"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+05",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/05-boas-praticas-em-seguranca-da-informacao.html"
+    },
+
+    {
         curso: "Udemy - JavaScript",
         data: "01/01/2025",
         titulo: "Tipos de Dados",

@@ -1,15 +1,15 @@
 {
-  "name": "curso-01-javascript-basico-ao-avancado-132-projetos-reais",
+  "name": "meus-resumos-e-anotacoes",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "prebuild": "npm install"
   },
-  "keywords": ["JavaScript Udemy", "Resumos Udemy"],
+  "keywords": ["Resumos estudos programação", "anotações estudos programação"],
   "author": "EmillyAndradeDev",
   "license": "ISC",
-  "description": "Resumos das aulas do curso JavaScript do Básico ao Avançado da Udemy",
+  "description": "Resumos dos conteúdos estudados em 2025",
   "dependencies": {},
   "devDependencies": {}
 
