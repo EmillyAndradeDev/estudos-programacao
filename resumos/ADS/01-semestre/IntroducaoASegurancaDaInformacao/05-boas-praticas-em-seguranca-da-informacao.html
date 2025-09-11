@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Segurança da Informação - ADS </title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="resumo-container">
+        <header class="resumo-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-pequeno" src="../../../../assets/img/logo-EmillyAndradeDev.png"
+                        alt="Logo de Emilly Andrade">
+
+                    <h1>Boas Práticas em Segurança da Informação</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="resumo-container">
+
+            <section class="resumo-section">
+                <h2>Introdução</h2>
+                <p>Casos reais mostram o impacto dos ataques cibernéticos:</p>
+                <ul>
+                    <li><strong>CapitalOne (2019):</strong> dados de 100 milhões de clientes foram comprometidos por
+                        ex-funcionária da Amazon.</li>
+
+                    <li><strong>Baltimore (2019):</strong> cidade paralisada por ransomware.</li>
+
+                    <li><strong>Prosegur:</strong> site fechado após ataque do malware RYUK.</li>
+                </ul>
+                <p>
+                    Esses exemplos reforçam a <strong>importância da segurança da informação</strong>, que busca
+                    garantir
+                    <strong>confidencialidade</strong>, <strong>integridade</strong> e <strong>disponibilidade</strong>.
+                </p>
+                <h3>Boas práticas iniciais</h3>
+                <ul>
+                    <li>Nunca compartilhar senhas.</li>
+                    <li>Usar antivírus atualizado.</li>
+                    <li>Verificar se os sites são confiáveis.</li>
+                    <li>Não abrir links/arquivos de remetentes desconhecidos.</li>
+                    <li>Baixar programas só de fontes oficiais.</li>
+                    <li>Fazer backup regularmente.</li>
+                    <li>Habilitar o firewall.</li>
+                    <li>Manter o sistema atualizado.</li>
+                </ul>
+                <h3>Gerenciamento de senhas</h3>
+                <ul>
+                    <li>Usar senhas com mínimo de 8 caracteres, combinando letras maiúsculas, minúsculas, números e
+                        símbolos.</li>
+                    <li>Trocar senhas regularmente e nunca reutilizá-las.</li>
+                    <li>Não usar dados pessoais (nome, data de nascimento, placa do carro etc.).</li>
+                    <li>Não repetir a mesma senha em diferentes serviços.</li>
+                    <li>Não compartilhar nem anotar senhas, elas devem ser memorizadas.</li>
+                </ul>
+                <div class="destaque-importante">
+                    <h3>Treinamento</h3>
+                    <p>Mesmo com boas ferramentas, um único e-mail de phishing pode comprometer toda a organização.</p>
+                    <p>📌 <strong>O que é phishing?</strong></p>
+                    <p>Fraude eletrônica que usa e-mails ou sites falsos para roubar dados, principalmente bancários.
+                    </p>
+                    <p>📌 <strong>Como prevenir?</strong></p>
+                    <ul>
+                        <li>Treinamento contínuo dos funcionários.</li>
+
+                        <li>Simulações de ataques para testar a eficácia do aprendizado.</li>
+
+                        <li>Envolvimento da diretoria e de todos os setores.</li>
+
+                        <li>Uso de diferentes métodos de ensino (aulas, workshops, quizzes, jogos).</li>
+
+                        <li>Conteúdo sempre atualizado, pois os ataques mudam com frequência.</li>
+                    </ul>
+                    <p>📌 <strong> Referência importante:</strong></p>
+                    <p>A ISO/IEC 27002 orienta boas práticas de segurança, com 133 controles divididos em 11 áreas,
+                        como:</p>
+                    <ol>
+                        <li>Política de Segurança da Informação.</li>
+                        <li>Gestão de Ativos.</li>
+                        <li>Segurança em Recursos Humanos.</li>
+                        <li>Segurança Física e do Ambiente.</li>
+                        <li>Controle de Acesso.</li>
+                        <li>Gestão de Incidentes.</li>
+                        <li>Continuidade do Negócio.</li>
+                        <li>Conformidade, entre outros.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Boas Práticas em Segurança da Informação</h2>
+                <h3>Mecanismos de Proteção</h3>
+                <p>Conjunto de ações e recursos para proteger um sistema ou organização.</p>
+                <ul>
+                    <li><strong>Do ponto de vista da organização:</strong> restrições de comportamento (portas,
+                        fechaduras, chaves, paredes).</li>
+                    <li><strong>Do ponto de vista dos sistemas: </strong>restrições de funções e fluxos (acesso a dados,
+                        programas, sistemas externos).</li>
+                </ul>
+                <h3>Princípios Fundamentais</h3>
+                <ol>
+                    <li>Economia de mecanismo <ul>
+                            <li>O sistema deve ser simples e pequeno → facilita análise, testes e validação.</li>
+                            <li>Evita brechas escondidas no uso normal.</li>
+                        </ul>
+                    </li>
+                    <li>Padrões à prova de falhas <ul>
+                            <li>O acesso deve ser por permissão e não por exclusão.</li>
+                            <li>Se não houver configuração → padrão deve ser sem acesso.</li>
+                            <li>Exemplo: arquivo .htaccess do Apache.</li>
+                        </ul>
+                    </li>
+                    <li>Mediação completa <ul>
+                            <li>Todo acesso a recursos deve ser verificado.</li>
+                            <li>Inclui início, desligamento, manutenção e mudanças de permissões.</li>
+                            <li>Identificação da origem de cada solicitação.</li>
+                        </ul>
+                    </li>
+                    <li>Projeto aberto <ul>
+                            <li>A segurança não deve depender do sigilo do sistema.</li>
+                            <li>Base deve estar em chaves criptográficas ou senhas.</li>
+                            <li>Sistemas devem ser auditáveis por revisores externos.</li>
+                        </ul>
+                    </li>
+                    <li>Separação de privilégios <ul>
+                            <li>Exige duas ou mais condições para acesso.</li>
+                            <li>Exemplo: cofres de banco, sistemas militares.</li>
+                            <li>Em TI, usado em dados protegidos que dependem de múltiplas autorizações.</li>
+                        </ul>
+                    </li>
+                    <li>Privilégio mínimo <ul>
+                            <li>Cada usuário/programa deve ter apenas o mínimo necessário para executar sua função.</li>
+                            <li>Reduz danos de erros ou ataques.</li>
+                            <li>Exemplo: gerenciamento de privilégios no SQL (GRANT).</li>
+                        </ul>
+                    </li>
+                    <li>Compartilhamento mínimo <ul>
+                            <li>Minimizar recursos compartilhados entre programas.</li>
+                            <li>Exemplo: preferir funções de biblioteca a chamadas ao núcleo (system calls).</li>
+                        </ul>
+                    </li>
+                    <li>Aceitação psicológica <ul>
+                            <li>O sistema deve ser fácil de usar para que os usuários sigam as regras naturalmente.</li>
+                            <li>Senhas muito complexas podem gerar vulnerabilidades (usuários esquecem ou anotam).</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Controle de Acesso, Antivírus e Backup</h2>
+                <p>Limita quem pode acessar sistemas, informações ou recursos físicos/virtuais.</p>
+                <p>Usuários precisam apresentar credenciais (senhas, biometria, cartões, portas eletrônicas).</p>
+                <h3><strong>Tipos de Controle de Acesso</strong></h3>
+                <ol>
+                    <li>DAC - Discretionary Access Control (Discricionário) <ul>
+                            <li>O dono dos recursos define quem tem acesso.</li>
+                            <li>Mais flexível, mas menos seguro (usuário final pode dar permissões indevidas).</li>
+                        </ul>
+                    </li>
+                    <li>MAC - Mandatory Access Control (Obrigatório) <ul>
+                            <li>Sistema define regras rígidas de acesso com rótulos/categorias.</li>
+                            <li>Sujeitos (processos) só acessam objetos (arquivos, portas, diretórios etc.) se as regras
+                                permitirem.</li>
+                        </ul>
+                    </li>
+                    <li>RBAC - Role-Based Access Control (Baseado em Função) <ul>
+                            <li>Permissões atribuídas conforme o papel/função do usuário na organização.</li>
+                            <li>Evita acessos desnecessários a dados não relacionados ao cargo.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h4>Recursos que devem ser protegidos</h4>
+                <ul>
+                    <li><strong>Aplicativos:</strong> evitar adulteração do código-fonte.</li>
+                    <li><strong>Arquivos de dados:</strong> só usuários credenciados podem alterar.</li>
+                    <li><strong>Sistema operacional e utilitários:</strong> acesso restrito, pois podem comprometer toda
+                        a rede.</li>
+                    <li><strong>Arquivos de senha:</strong> precisam de criptografia/segurança extra.</li>
+                    <li><strong>Arquivos de log:</strong> essenciais para auditoria e rastreabilidade (muito visados por
+                        invasores).</li>
+                </ul>
+                <h4>Boas práticas no logon</h4>
+                <ul>
+                    <li>Informar que o sistema é restrito.</li>
+                    <li>Não mostrar detalhes do erro (ex.: “senha incorreta”).</li>
+                    <li>Limitar tentativas (ex.: 3).</li>
+                    <li>Registrar acessos inválidos.</li>
+                    <li>Forçar tempo de espera após falhas.</li>
+                    <li>Mostrar data/hora do último login e tentativas falhas.</li>
+                </ul>
+                <h3><strong>Antivírus</strong></h3>
+                <p>Programas maliciosos têm diversas categorias:</p>
+                <h4>Tipos principais de vírus</h4>
+                <ul>
+                    <li><strong>De arquivo (parasitário):</strong> se anexa a programas.</li>
+                    <li><strong>De boot:</strong> afeta o setor de inicialização.</li>
+                    <li><strong>De macro:</strong> usa macros em Word/Excel.</li>
+                    <li><strong>De código-fonte:</strong> altera o código original.</li>
+                    <li><strong>Mutante / Polimórfico:</strong> mudam de forma para enganar o antivírus.</li>
+                    <li><strong>Cavalo de Troia (Trojan):</strong> disfarçado de software útil.</li>
+                    <li><strong>Multipartite:</strong> ataca várias áreas (memória, arquivos, boot).</li>
+                    <li><strong>Stealth:</strong> esconde sua presença.</li>
+                    <li><strong>Encapsulado:</strong> se instala em manipuladores de interrupções.</li>
+                    <li><strong>Criptografado:</strong> se oculta em forma criptografada.</li>
+                    <li><strong>Blindado:</strong> usa técnicas avançadas para dificultar detecção.</li>
+                </ul>
+                <h4>Política de antivírus</h4>
+                <ul>
+                    <li>Todos os computadores devem ter antivírus instalado e atualizado.</li>
+                    <li>Atualizações automáticas regulares.</li>
+                    <li>Verificar arquivos recebidos de fora.</li>
+                    <li>Examinar dispositivos externos (pendrives, HDs).</li>
+                    <li>Não inicializar máquinas com mídias externas.</li>
+                    <li>Antivírus deve estar sempre residente na memória.</li>
+                </ul>
+                <h3><strong>Backup</strong></h3>
+                <p>Criação de cópias redundantes de dados para garantir recuperação em caso de falha ou ataque.</p>
+                <h4>Tipos de Backup</h4>
+                <ol>
+                    <li><strong>Completo</strong>
+                        <ul>
+                            <li>Copia todos os arquivos e logs.</li>
+                            <li>Mais seguro, mas mais demorado.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Incremental</strong>
+                        <ul>
+                            <li>Copia apenas o que foi alterado desde o último backup.</li>
+                            <li>Rápido, ocupa pouco espaço.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Diferencial (ou Incremental Cumulativo)</strong>
+                        <ul>
+                            <li>Copia todos os arquivos modificados desde o último backup completo.</li>
+                            <li>Mais rápido que o completo, mas maior que o incremental.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h4>Boas práticas de backup</h4>
+                <ul>
+                    <li>Ter uma política de backup (responsáveis, periodicidade, locais de armazenamento).</li>
+                    <li>Testar regularmente se os backups podem ser restaurados.</li>
+                    <li>Definir tempo de retenção (legislação pode exigir prazos específicos).</li>
+                    <li>Usar soluções de Disaster Recovery para manter a continuidade do negócio.</li>
+                </ul>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Criptografia</h2>
+                <p>A criptografia é a ciência de transformar informações em códigos, garantindo que apenas quem possua a
+                    chave correta consiga acessar os dados.</p>
+                <h3>Tipos principais</h3>
+                <ol>
+                    <li><strong>Chave simétrica (privada ou secreta)</strong>
+                        <ul>
+                            <li>Uma única chave é usada para cifrar e decifrar.</li>
+                            <li>Mais rápida, mas menos segura em grandes redes.</li>
+                            <li>Exemplos: AES, DES, Blowfish.</li>
+                            <li>Aplicação: confidencialidade.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Chave assimétrica (pública e privada)</strong>
+                        <ul>
+                            <li>Usa duas chaves diferentes, uma para cifrar e outra para decifrar.</li>
+                            <li>Mais segura, mas mais lenta.</li>
+                            <li>Exemplos: RSA, ECC (curvas elípticas).</li>
+                            <li>Aplicação: confidencialidade, autenticação, não repúdio.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Função Hash</strong>
+                        <ul>
+                            <li>Não usa chave.</li>
+                            <li>Gera uma "impressão digital" única da informação.</li>
+                            <li>Impossível reverter o processo (one-way).</li>
+                            <li>Exemplos: SHA, MD5.</li>
+                            <li>Aplicação: integridade.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Certificado Digital</h3>
+                <p>O certificado digital é como uma identidade eletrônica que garante segurança nas comunicações
+                    digitais.</p>
+                <ul>
+                    <strong>&rarr; Principais características:</strong>
+                    <li>Autenticidade: prova a identidade de pessoas e instituições.</li>
+                    <li>Integridade: garante que a mensagem não foi alterada.</li>
+                    <li>Não repúdio: impede que alguém negue a autoria de uma transação.</li>
+                </ul>
+                <ul>
+                    <strong>&rarr; Estrutura de um certificado digital:</strong>
+                    <li>Nome do sujeito (pessoa ou empresa certificada).</li>
+                    <li>Chave pública.</li>
+                    <li>Número de série.</li>
+                    <li>Data de validade.</li>
+                    <li>Assinatura digital da autoridade certificadora (AC).</li>
+                </ul>
+                <ul>
+                    <strong>&rarr; Uso no Brasil:</strong>
+                    <li>Regulado pela ICP-Brasil desde 2001.</li>
+                    <li>Aplicações: Receita Federal, nota fiscal eletrônica, serviços judiciais, cartórios, saúde,
+                        pregões eletrônicos etc.</li>
+                </ul>
+                <h3>Comparando métodos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Método</th>
+                            <th>Chaves</th>
+                            <th>Segurança</th>
+                            <th>Velocidade</th>
+                            <th>Aplicação principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Simétrica</td>
+                            <td>1 chave</td>
+                            <td>Boa</td>
+                            <td>Rápida</td>
+                            <td>Confidencialidade</td>
+                        </tr>
+                        <tr>
+                            <td>Assimétrica</td>
+                            <td>2 chaves</td>
+                            <td>Muito alta</td>
+                            <td>Mais lenta</td>
+                            <td>Confidencialidade, autenticação</td>
+                        </tr>
+                        <tr>
+                            <td>Hash</td>
+                            <td>Nenhuma</td>
+                            <td>Altíssima</td>
+                            <td>Rápida</td>
+                            <td>Integridade</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="destaque">
+                    <p>📌 A <strong>criptografia protege os dados</strong> em trânsito e em repouso, enquanto o <strong>certificado digital garante identidade e confiança nas transações</strong>. Juntos, eles formam a <strong>base da segurança digital moderna</strong>.</p>
+                </div>
+            </section>
+
+            <section class="resumo-section">
+                <h2>Considerações finais</h2>
+                <p>Ao longo deste conteúdo, vimos que os recursos da informática, como a internet, o correio eletrônico e as redes sem fio, tornaram-se ferramentas indispensáveis para a realização das mais diversas atividades, principalmente no ambiente de trabalho. Contudo, esses mesmos recursos se transformaram em alvos constantes de pessoas mal-intencionadas, que os exploram para fins ilícitos, como roubo de informações, disseminação de vírus e envio de spam.</p>
+                <p>Em uma companhia, cada informação possui um valor específico e pode ser classificada conforme o impacto que sua perda, alteração ou uso indevido pode causar. Por esse motivo, proteger dados contra ataques virtuais é uma necessidade estratégica.</p>
+                <p>Ao longo dos módulos, destacamos medidas de segurança fundamentadas na <strong>ISO/IEC 27002</strong>, consideradas boas práticas de segurança da informação. Essas práticas têm como objetivo proteger os recursos tecnológicos e informacionais, possibilitando às organizações identificar, prevenir, proteger, detectar, responder e recuperar-se rapidamente diante de uma ameaça.</p>
+                <p>Assim, a correta aplicação desses conceitos garante os três pilares essenciais da segurança da informação: <strong>confidencialidade, integridade e disponibilidade</strong>, preservando os ativos digitais e fortalecendo a confiança no ambiente organizacional.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../index.html">← Voltar</a>
+    </footer>
+
+</body>
+
+</html>
