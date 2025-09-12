@@ -298,6 +298,26 @@ const resumos = [
     },
 
     {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Gestão de Risco",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Gestão de Risco",
+        tags: ["Gestão de Risco"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+06",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/06-gestao-de-risco.html"
+    },
+
+    {
+        curso: "Análise e Desenvolvimento de Sistemas - Introdução à Segurança da Informação",
+        data: "01/01/2025",
+        titulo: "Gestão de Continuidade do Negócio",
+        resumo: "Conteúdo da matéria: Introdução à Segurança da Informação. Tema: Gestão de Continuidade do Negócio",
+        tags: ["Gestão de Continuidade do Negócio"],
+        thumbnail: "https://placehold.co/600x400/7B3E19/white?text=Introdução+à+Segurança+da+Informação:+07",
+        link: "resumos/ADS/01-semestre/IntroducaoASegurancaDaInformacao/07-gestao-de-continuidade-do-negocio.html"
+    },
+
+    {
         curso: "Udemy - JavaScript",
         data: "01/01/2025",
         titulo: "Tipos de Dados",
